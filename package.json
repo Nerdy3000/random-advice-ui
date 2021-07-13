@@ -1,0 +1,24 @@
+{
+  "name": "random-advice-ui",
+  "author": "Kelly Savoy",
+  "version": "1.0.0",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "vue": "^2.6.14"
+  },
+  "devDependencies": {
+    "css-loader": "^5.2.6",
+    "mini-css-extract-plugin": "^2.1.0",
+    "sass": "^1.35.2",
+    "sass-loader": "^12.1.0",
+    "style-loader": "^3.0.0",
+    "vue-loader": "15.9.2",
+    "vue-template-compiler": "^2.6.14",
+    "webpack": "^5.44.0",
+    "webpack-cli": "^4.7.2"
+  },
+  "scripts": {
+    "build": "webpack--config webpack.config.js"
+  }
+}

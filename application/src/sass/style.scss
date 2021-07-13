@@ -1,0 +1,63 @@
+@import 'variables';
+
+body {
+  background: $color-celedon-blue;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  color: $color-ivory;
+  min-width: 300px;
+}
+
+a {
+  &, &:visited {
+    color: $color-ivory;
+  }
+  &:hover, &:focus {
+    color: $color-turqoise;
+  }
+}
+
+.advice-slip-container {
+  display: flex;
+  height: 100vh;
+  min-height: 10em;
+  justify-content: center;
+  align-items: center;
+
+  .advice-slip {
+    width: 600px;
+    padding: 1em;
+    text-align: center;
+
+    @media only screen and ( max-width: 700px ) {
+      width: auto;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 2em;
+    }
+
+    button {
+      background: $color-ivory;
+      color: $color-turqoise;
+      border: 2px solid $color-ivory;
+      border-radius: 2px;
+      padding: 0.5em;
+      font-weight: 400;
+      font-size: 1.2em;
+
+      &:focus, &:hover {
+        border-color: $color-turqoise;
+        box-shadow: none;
+        outline: none;
+      }
+    }
+  }
+}
+
+.advice-slips-credit {
+  position: absolute;
+  bottom: 0.5em;
+  right: 1em;
+}
